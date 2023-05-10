@@ -12,9 +12,16 @@
 
   <div class="series">
     <div class="container">
-      <div class="box" v-for="(serie, i) in series">
-        <SerieCard :image="serie.thumb" :title="serie.series" />
+
+      @foreach ( $comics as $comic)
+      <div class="box">
+        <div class="card">
+          <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}" />
+          <div>{{$comic['title']}}</div>
+        </div>
       </div>
+      @endforeach
+      
       <button class="my-btn primary">Load More</button>
     </div>
   </div>

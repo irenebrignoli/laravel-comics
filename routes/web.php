@@ -17,5 +17,7 @@ Route::get('/', function () {
 
     //$links = config('nav.nav');
 
-    return view('home');
+    $comics = config('comics');
+
+    return view('home', compact('comics'));
 })->name('home');

@@ -18,7 +18,6 @@
             <li><a href="#"></a>Comics</li>
             <li><a href="#"></a>Movies</li>
             <li><a href="#"></a>TV</li>
-            <li><a href="#"></a>TV</li>
             <li><a href="#"></a>Games</li>
             <li><a href="#"></a>Collectibles</li>
             <li><a href="#"></a>Videos</li>
