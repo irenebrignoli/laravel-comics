@@ -1,7 +1,7 @@
 <?php
 
 return[
-  'nav'=> [
+  [
     'Characters',
     'Comics',
     'Movies',

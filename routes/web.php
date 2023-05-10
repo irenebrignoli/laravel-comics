@@ -18,6 +18,7 @@ Route::get('/', function () {
     //$links = config('nav.nav');
 
     $comics = config('comics');
+    $blueIcons = config('blueband');
 
-    return view('home', compact('comics'));
+    return view('home', compact('comics'), compact('blueIcons'));
 })->name('home');

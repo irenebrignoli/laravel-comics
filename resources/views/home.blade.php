@@ -23,6 +23,17 @@
     </div>
   </div>
 
-  @include('partials.blueBand')
+  <section id="blue-band">
+    <div class="container h-100">
+
+      @foreach ( $blueIcons as $icon)
+      <div class="link">
+        <img src="resources/img/blue-band/buy-{{$icon['image']}}" />
+        <span>{{$icon['name']}}</span>
+      </div>      
+      @endforeach
+      
+    </div>
+  </section>
 
 @endsection
