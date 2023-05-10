@@ -1,0 +1,32 @@
+@import "~bootstrap/scss/bootstrap";
+@import "partials/_variables.scss";
+@import "partials/_mixins.scss";
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.my_btn {
+    border: 2px solid $primary_color;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: $footer_bg_color;
+    padding: 10px 20px;
+    color: $text_white_color;
+    cursor: pointer;
+
+    &.primary {
+        background-color: $primary_color;
+        border: none;
+        font-size: 12px;
+        padding: 10px 50px;
+
+        &:hover {
+            background-color: lighten($primary_color, 10);
+        }
+    }
+
+    &:hover {
+        background-color: lighten($footer_bg_color, 10);
+    }
+}
