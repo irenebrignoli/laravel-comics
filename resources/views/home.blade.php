@@ -9,10 +9,8 @@
       <div class="series-title">Current Series</div>
     </div>
   </div>
-
   <div class="series">
     <div class="container">
-
       @foreach ( $comics as $comic)
       <div class="box">
         <div class="card">
@@ -21,9 +19,10 @@
         </div>
       </div>
       @endforeach
-      
       <button class="my-btn primary">Load More</button>
     </div>
   </div>
+
+  @include('partials.blueBand')
 
 @endsection

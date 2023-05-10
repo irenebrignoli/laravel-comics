@@ -1,0 +1,29 @@
+#blue-band {
+    height: 150px;
+    background-color: $primary-color;
+
+    .container {
+        @include d-flex-center;
+        justify-content: center;
+        gap: 60px;
+
+        .link {
+            @include d-flex-center;
+            img {
+                height: 50px;
+                margin-right: 10px;
+            }
+
+            span {
+                font-size: 12px;
+                font-weight: 500;
+                color: $text-white-color;
+                text-transform: uppercase;
+            }
+
+            &:last-child img {
+                height: 40px;
+            }
+        }
+    }
+}
