@@ -8,12 +8,22 @@
   <!--font-->
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- Styles -->
-  @vite('resources/js/app.js')
 
-  <title>@yeld('page-title')</title>
+  <title>@yield('page-title')</title>
 </head>
+
 <body>
-  
+
+  @include('partials.header')
+
+  <main>
+
+    @yield('content')
+
+  </main>
+
+  @include('partials.footer')
+
 </body>
+
 </html>

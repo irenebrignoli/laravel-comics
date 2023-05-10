@@ -1,0 +1,41 @@
+header {
+    height: 110px;
+    padding: 20px;
+    background-color: $header-bg-color;
+
+    .container {
+        @include d-flex-center;
+        justify-content: space-between;
+    }
+}
+
+.nav-bar {
+    ul {
+        @include d-flex-center;
+        gap: 20px;
+        text-transform: uppercase;
+        font-size: 11px;
+        font-weight: 600;
+        list-style: none;
+
+        li {
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                color: $primary-color;
+            }
+
+            &:hover:after {
+                content: "";
+                width: 40px;
+                height: 3px;
+                background-color: $primary-color;
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
