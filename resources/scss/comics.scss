@@ -1,0 +1,15 @@
+.series {
+    background-color: $main-bg-color;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        padding: 50px 0;
+
+        .box {
+            width: 150px;
+        }
+    }
+}

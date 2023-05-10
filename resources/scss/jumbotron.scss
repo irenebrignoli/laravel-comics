@@ -1,0 +1,23 @@
+#jumbotron {
+    height: 350px;
+    background-image: url(../img/jumbotron.jpg);
+    background-size: cover;
+    background-position: top;
+
+    .container {
+        position: relative;
+
+        .series-title {
+            padding: 10px 20px;
+            background-color: $primary-color;
+            text-transform: uppercase;
+            color: $text-white-color;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 18px;
+            position: absolute;
+            bottom: 0;
+            transform: translateY(+50%);
+        }
+    }
+}

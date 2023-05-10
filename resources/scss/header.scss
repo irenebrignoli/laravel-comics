@@ -1,11 +1,30 @@
 header {
-    height: 110px;
-    padding: 20px;
     background-color: $header-bg-color;
 
-    .container {
+    .header-top {
+        height: 20px;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: $text-white-color;
+        background-color: $primary-color;
+
+        .container {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+
+    .header-bottom {
         @include d-flex-center;
+        padding: 15px 0;
         justify-content: space-between;
+        height: 90px;
+
+        .logo {
+            height: 100%;
+        }
     }
 }
 
@@ -14,7 +33,7 @@ header {
         @include d-flex-center;
         gap: 20px;
         text-transform: uppercase;
-        font-size: 11px;
+        font-size: 13px;
         font-weight: 600;
         list-style: none;
 
@@ -32,7 +51,7 @@ header {
                 height: 3px;
                 background-color: $primary-color;
                 position: absolute;
-                top: 60px;
+                top: 50px;
                 left: 50%;
                 transform: translateX(-50%);
             }
