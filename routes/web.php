@@ -15,10 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    //$links = config('nav.nav');
 
     $comics = config('comics');
-    $blueIcons = config('blueband');
+    $blueIcons = config('db.blueBand');
 
     return view('home', compact('comics'), compact('blueIcons'));
 })->name('home');
